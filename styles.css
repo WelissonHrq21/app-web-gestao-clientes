@@ -1,0 +1,338 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #459B9C;
+}
+#bgd-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #459B9C;
+}
+
+.container {
+    display: flex;
+    width: 25%;
+    min-width: 370px;
+    height: 70%;
+    background-color: #1E2833;
+    padding: 20px 35px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    border-radius: 6px;
+}
+
+#form-login {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+#input-password {
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 0 10px;
+}
+#input-user {
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 0 10px;
+}
+
+#btn-login {
+    height: 40px;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: filter 150ms;
+}
+
+#btn-login:hover{
+    filter: brightness(0.75);
+}
+
+#title-form{
+    color: aliceblue;
+}
+
+#section-app {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #459B9C;
+}
+
+#container-form-insert {
+    background-color: #1E2833;
+    display: flex;
+    width: 25%;
+    min-width: 370px;
+    height: 70%;
+    padding: 20px 35px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    border-radius: 6px;
+
+}
+
+#insert-customer-form {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+#title-insert {
+    color: aliceblue;
+}
+
+#insert-customer-form input, button {
+    height: 40px;
+}
+#insert-customer-form input{
+    margin-top: 7px;
+    border-radius: 4px;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+}
+
+#insert-customer-form button{
+    margin-top: 12px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    transition: filter 150ms;
+    cursor: pointer;
+}
+#insert-customer-form button:hover {
+    filter: brightness(0.75);
+}
+
+#see-all-btn {
+    font-size: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: filter 150ms;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+#see-all-btn:hover {
+    filter: brightness(0.75);
+}
+
+#see-all-container {
+    display: none;
+    background-color: #4a5a5a;
+    width: 50%;
+    min-width: 400px;
+    height: 80%;
+    border-radius: 5px;
+    box-shadow: 4px 6px 30px -8px rgba(0,0,0,0.75);
+    padding: 20px;
+}
+
+#close-ctn-btn {
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    transition: filter 150ms;
+}
+#close-ctn-btn:hover {
+    filter: brightness(0.75);
+}
+
+#content-data {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: aliceblue;
+    width: 85%;
+    height: 95%;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+#form-search {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 10px;
+    
+}
+
+#input-search {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background-color: rgb(200, 210, 218);
+    border-radius: 4px;
+    padding: 0 5px;
+}
+
+.search-btn {
+    margin-left: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(200, 210, 218);
+    padding: 0 10px;
+    border-radius: 4px;
+    transition: filter 150ms;
+}
+
+.search-btn:hover {
+    filter: brightness(0.75);
+}
+
+#customer-data-ctn {
+    background-color: rgb(200, 210, 218);
+    width: 100%;
+    height: 90%;
+    border-radius: 4px;
+    padding: 8px;
+    overflow-y: auto;
+    
+}
+
+.customer-data {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 115px;
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.ctn-customer {
+    background-color: #459B9C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 0 5px;
+    border: none;
+    outline: none;
+    transition: filter 150ms;
+    border-radius: 4px;
+
+}
+
+.remove-btn {
+    transition: filter 150ms;
+}
+.remove-btn:hover {
+    filter: brightness(0.75);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    #container-form-insert {
+        width: 90%;
+    }
+
+    #see-all-container {
+        width: 90%;
+    }
+
+    .customer-data {
+        height: auto;
+    }
+
+    .ctn-customer {
+        height: auto;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .email-p {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 1096px) {
+    .ctn-customer {
+        height: 199px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    h3 {
+        font-size: 17px;
+    }
+    .email-p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 889px) {
+    #see-all-container {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    /* Ajuste os elementos do seu container aqui */
+    
+    #close-ctn-btn {
+        /* Posicione seu botão adequadamente, exemplo: */
+        position: absolute; /* ou 'fixed' dependendo do seu layout */
+        top: 10px; /* Ajuste conforme necessário */
+        right: 10px; /* Ajuste conforme necessário */
+        z-index: 10; /* Certifique-se de que é um valor acima dos outros elementos */
+    }
+
+    /* Faça outros ajustes de layout aqui, como alterar margin, padding, tamanho de fontes, etc. */
+}
+
+
+

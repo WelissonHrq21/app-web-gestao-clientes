@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Login Funcionário Gestão</title>
+</head>
+
+<body>
+    <div id="bgd-container">
+        <div class="container">
+            <h1 id="title-form">Login</h1>
+            <form id="form-login" action="">
+                <input id="input-user" placeholder="Insira seu Usuário" type="text" required>
+                <input id="input-password" placeholder="Insira sua senha" type="password" required>
+                <button id="btn-login" type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <section id="section-app">
+        <div id="see-all-container">
+            <button id="close-ctn-btn">Fechar</button>
+            <div id="content-data">
+                <form id="form-search" action="">
+                    <input placeholder="Pesquisar (digite o ID do cliente)" id="input-search" type="text">
+                    <button class="search-btn">buscar</button>
+                </form>
+
+                <div id="customer-data-ctn"></div>
+
+            </div>
+        </div>
+        <div id="container-form-insert">
+            <h1 id="title-insert">Cadastrar cliente</h1>
+            <form id="insert-customer-form" action="">
+                <input id="input-name" placeholder="Nome do cliente" type="text" required>
+                <input id="input-email" placeholder="Email do cliente" type="email" required>
+                <input id="input-tel" placeholder="Telefone do cliente" type="text" required>
+                <button id="insert-btn" type="submit">Cadastrar</button>
+            </form>
+            <button id="see-all-btn">Ver todos os clientes</button>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>
